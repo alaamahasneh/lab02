@@ -8,13 +8,13 @@ i worked in pair with ashar ^_^
 
 
 
-
+for me (Alaa)
 Number and name of feature: ____to filter keyword____________________________
 
-Estimate of time needed to complete: __30min___
+Estimate of time needed to complete: __1 hour__
 
-Start time: 8:00pm_____
+Start time:   _ 6:00pm___
 
 Finish time: _9:00pm____
 
-Actual time needed to complete: _1hour____
+Actual time needed to complete: ___1.5 hour__
