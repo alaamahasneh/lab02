@@ -5,6 +5,7 @@ function Image(image_url, title, description, keyword, horns) {
     this.description = description;
     this.keyword = keyword;
     this.horns = horns;
+    
 }
 let keywords = [];
 Image.prototype.render = function () {
@@ -23,10 +24,13 @@ Image.prototype.filterKeword = function () {
         keywords.push(this.keyword);
         // 5 loop through the keywords append to dropdown  
         $("#dropdown1").append("<option >" + this.keyword + "</option>");
-        $( "option" ).click( function() {
+    Image.prototype.handlerFunction = 
+        $( "#dropdown1" ).change( function() {
             $('li').hide();
+$('#photo-template').append('<p>'+this.description+'</p>')
+$('#photo-template').append('<img/'+this.image_url+'>')
 
-          $('#photo-template').html('<h1>'+ this.title+'</h1>')
+          $('#photo-template').append('<h1>'+ this.title+'</h1>')
     });
 }
 }
