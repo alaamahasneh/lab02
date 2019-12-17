@@ -5,13 +5,21 @@ function Image(image_url, title, description, keyword, horns) {
     this.description = description;
     this.keyword = keyword;
     this.horns = horns;
+
 }
 let keywords = [];
 Image.prototype.render = function () {
-    let showType = $('<li><h2></h2><img/><p></p></li>').clone();
+    let showType = $(`
+    <li>
+      <h2></h2>
+      <img/>
+      <p></p>
+    </li>
+    `).clone();
     showType.find('h2').text(this.title);
     showType.find('img').attr('src', this.image_url);
     showType.find('p').text(this.description);
+    showType.addClass(this.keyword);
     $('#photo-template').append(showType);
 }
 Image.prototype.filterKeword = function () {
@@ -23,10 +31,13 @@ Image.prototype.filterKeword = function () {
         keywords.push(this.keyword);
         // 5 loop through the keywords append to dropdown  
         $("#dropdown1").append("<option >" + this.keyword + "</option>");
-        $( "option" ).click( function() {
+    Image.prototype.handlerFunction = 
+        $( "#dropdown1" ).on('change' , (val) => {
+            let selectedVal=val.target.value;
             $('li').hide();
+$(`.${selectedVal}`).fadeIn(200);
 
-          $('#photo-template').html('<h1>'+ this.title+'</h1>')
+          
     });
 }
 }
