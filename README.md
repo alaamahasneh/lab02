@@ -9,20 +9,14 @@ We Copy the link for Jquery from this website (https://code.jquery.com/) , and u
 
 
 
-<<<<<<< HEAD
-for me (Alaa)
-Number and name of feature: ____to filter keyword____________________________
-=======
+
 Number and name of feature: ____((to filter keyword))________
->>>>>>> 774fa6ac76c52b9cbafe6fb9eb9c76012da5e792
+
 
 Estimate of time needed to complete: __1 hour__
 
-<<<<<<< HEAD
-Start time:   _ 6:00pm___
-=======
+
 Start time: ____8:00pm_____
->>>>>>> 774fa6ac76c52b9cbafe6fb9eb9c76012da5e792
 
 Finish time: ___9:00pm____
 
