@@ -9,12 +9,12 @@ We Copy the link for Jquery from this website (https://code.jquery.com/) , and u
 
 
 
-Number and name of feature: ____to filter keyword____________________________
+Number and name of feature: ____((to filter keyword))________
 
 Estimate of time needed to complete: __30min___
 
-Start time: 8:00pm_____
+Start time: ____8:00pm_____
 
-Finish time: _9:00pm____
+Finish time: ___9:00pm____
 
 Actual time needed to complete: _1hour____
