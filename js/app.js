@@ -31,16 +31,15 @@ Image.prototype.filterKeword = function () {
         keywords.push(this.keyword);
         // 5 loop through the keywords append to dropdown  
         $("#dropdown1").append("<option >" + this.keyword + "</option>");
-    Image.prototype.handlerFunction = 
+    }
+}
+    // Image.prototype.handlerFunction = 
         $( "#dropdown1" ).on('change' , (val) => {
             let selectedVal=val.target.value;
             $('li').hide();
-$(`.${selectedVal}`).fadeIn(200);
-
-          
+$(`.${selectedVal}`).fadeIn(200);   
     });
-}
-}
+
 $.get('/data/page-1.json')
     .then(data => {
         data.forEach(element => {
